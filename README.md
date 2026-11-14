@@ -10,6 +10,29 @@
 
 ---
 
+## Quick Navigation
+
+- [Project Overview](#1-project-overview)
+- [Research Objectives](#2-research-objectives)
+- [Research Workflow](#3-research-workflow)
+- [Power System Modeling and Dataset Generation](#4-power-system-modeling-and-dataset-generation)
+- [Exploratory Data Analysis](#5-exploratory-data-analysis-eda)
+- [Signal Preprocessing](#6-signal-preprocessing)
+- [Deep Learning Architectures](#7-deep-learning-architectures)
+- [Experimental Setup](#8-experimental-setup)
+- [Experimental Results](#9-experimental-results-and-performance-comparison)
+- [Technologies and Tools](#10-technologies-and-tools)
+- [Repository Structure](#11-repository-structure)
+- [Research Paper](#12-research-paper)
+- [Technical Seminar Presentation](#13-technical-seminar-presentation)
+- [Future Research Directions](#14-future-research-directions)
+- [Course Supervisor](#15-course-supervisor)
+- [Acknowledgement](#16-acknowledgement)
+- [Author](#17-author)
+- [License](#license)
+
+---
+
 ## 1. Project Overview
 
 Transmission line faults are among the major challenges affecting the reliability, stability, and security of electrical power systems. Accurate fault classification is essential for intelligent protection systems and uninterrupted power delivery.
@@ -147,6 +170,12 @@ The dataset also contains metadata describing:
 - Fault location
 - Fault type
 - Fault resistance
+
+### Dataset Availability
+
+The complete dataset is not publicly distributed due to research collaboration and data-sharing considerations.
+
+The repository provides the MATLAB/Simulink source code, dataset generation methodology, analysis notebooks, and research documentation. These resources describe the research workflow without distributing the complete dataset.
 
 ## 5. Exploratory Data Analysis (EDA)
 
@@ -296,6 +325,8 @@ The three architectures were evaluated under identical experimental conditions.
 | **BiLSTM** | **96.13%** | **0.1195** | **0.96** |
 | CNN–BiLSTM | 95.85% | 0.1604 | 0.96 |
 
+*Note: Reported results are based on the experimental evaluation conducted in this study. Minor differences may occur due to training conditions and random initialization.*
+
 ### 9.2 Key Findings
 
 - All three architectures achieved testing accuracies above 95%.
@@ -310,6 +341,17 @@ The three architectures were evaluated under identical experimental conditions.
 **BiLSTM — 96.13% Test Accuracy**
 
 BiLSTM achieved the best overall classification performance among the investigated architectures, indicating that bidirectional temporal modeling can effectively capture fault-related transient behavior in multivariate transmission line signals.
+
+### 9.4 Results and Visualizations
+
+The repository includes selected visualizations and experimental results, including:
+
+- Exploratory data analysis figures
+- Training and validation performance curves
+- Model evaluation visualizations
+- Confusion matrix results
+
+Explore the [`results/`](results/) directory for the available figures and evaluation materials.
 
 ## 10. Technologies and Tools
 
@@ -328,7 +370,7 @@ BiLSTM achieved the best overall classification performance among the investigat
 
 ## 11. Repository Structure
 
-The repository is organized to separate simulation, dataset documentation, exploratory data analysis, deep learning implementation, experimental results, and academic documentation.
+The repository is organized to separate simulation, dataset documentation, exploratory data analysis, deep learning experiments, experimental results, and academic documentation.
 
 ```text
 transmission-line-fault-classification/
@@ -369,8 +411,6 @@ transmission-line-fault-classification/
 └── .gitignore
 ```
 
-*Note: This is the planned repository structure. Actual source files, notebooks, and research assets will be added progressively.*
-
 ## 12. Research Paper
 
 **Title:**
@@ -387,7 +427,25 @@ The six-page IEEE-style research manuscript presents the proposed simulation fra
 
 The manuscript was prepared as part of the academic evaluation requirements of the Technical Seminar course.
 
-## 13. Future Research Directions
+**Research Paper:** [View IEEE-Style Conference Paper](paper/ieee_conference_paper.pdf)
+
+## 13. Technical Seminar Presentation
+
+The research was presented as part of the Technical Seminar course at the Department of Electrical and Electronic Engineering, Jamalpur Science & Technology University.
+
+The presentation covers:
+
+- Research background and objectives
+- Power system modelling and fault simulation
+- Dataset generation and exploratory analysis
+- Signal preprocessing methodology
+- Deep learning architectures
+- Experimental results and comparative analysis
+- Research findings and future directions
+
+**Presentation:** [View Technical Seminar Presentation](presentation/technical_seminar.pptx)
+
+## 14. Future Research Directions
 
 Potential extensions of this research include:
 
@@ -398,7 +456,7 @@ Potential extensions of this research include:
 - Evaluation under different network topologies and operating conditions.
 - Investigation of real-time intelligent power system protection.
 
-## 14. Course Supervisor
+## 15. Course Supervisor
 
 **Md. Amimul Ihsan**
 
@@ -411,13 +469,13 @@ Jamalpur Science & Technology University (JSTU), Bangladesh.
 - [Google Scholar](https://scholar.google.com/citations?user=cMSNlgMAAAAJ&hl=en)
 - [LinkedIn](https://www.linkedin.com/in/amimul-ihsan-zami010763/)
 
-## 15. Acknowledgement
+## 16. Acknowledgement
 
 The author expresses sincere gratitude to **Md. Amimul Ihsan**, Lecturer (on Study Leave), Department of Electrical and Electronic Engineering, Jamalpur Science & Technology University, who is currently pursuing his PhD at the University of Toronto, Canada, for his valuable supervision, academic guidance, constructive feedback, and continuous encouragement throughout this project under the Technical Seminar course.
 
 The author also acknowledges the Department of Electrical and Electronic Engineering, Jamalpur Science & Technology University, for providing the academic environment and support necessary to carry out this work.
 
-## 16. Author
+## 17. Author
 
 **Abdullah Al Minhaz**
 
