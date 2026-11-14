@@ -218,3 +218,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# MATLAB datasets
+*.mat
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Model weights
+*.h5
+*.keras
+*.weights.h5
+
+# Temporary MATLAB files
+*.asv
+*.slxc
