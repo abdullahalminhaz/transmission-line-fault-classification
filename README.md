@@ -336,32 +336,22 @@ transmission-line-fault-classification/
 ├── matlab/
 │   ├── power_system_model/
 │   ├── dataset_generation/
+│   ├── dataset_merging/
 │   └── README.md
 │
 ├── data/
-│   ├── README.md
-│   └── sample/
+│   └── README.md
 │
 ├── notebooks/
-│   ├── 01_data_inspection.ipynb
-│   ├── 02_exploratory_data_analysis.ipynb
-│   ├── 03_signal_processing.ipynb
-│   └── 04_model_evaluation.ipynb
-│
-├── src/
-│   ├── preprocessing/
-│   ├── models/
-│   │   ├── cnn.py
-│   │   ├── bilstm.py
-│   │   └── cnn_bilstm.py
-│   └── evaluation/
+│   ├── EDA_On_Fault_Simulated_Data.ipynb
+│   ├── CNN_Simulated_Data_Fault_Detection.ipynb
+│   ├── BiLSTM_Simulated_Data_Fault_Detection.ipynb
+│   └── CNN+BiLSTM_Simulated_Data_Fault_Detection.ipynb
 │
 ├── results/
-│   ├── figures/
-│   ├── confusion_matrices/
-│   └── performance_comparison/
-│
-├── models/
+│   ├── eda/
+│   ├── training/
+│   ├── evaluation/
 │   └── README.md
 │
 ├── paper/
